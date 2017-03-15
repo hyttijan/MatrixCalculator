@@ -1,2 +1,2 @@
 # MatrixCalculator
-TIRA project, a matrix calculator implemented in Python
+TIRA-projekti, matriisilaskin, toteutuskielenä käytetään Pythonia 
