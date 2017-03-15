@@ -1,1 +1,1 @@
-!coverage.py: This is a private format, don't read it directly!{"arcs":{"/home/hyttijan/MatrixCalculator/src/main/python/main.py":[[-1,1],[4,-1],[1,4]]}}
+!coverage.py: This is a private format, don't read it directly!{"arcs":{"/home/hyttijan/MatrixCalculator/src/main/python/matrix.py":[[1,2],[-1,1],[47,56],[11,14],[21,32],[4,8],[8,11],[36,39],[14,21],[32,36],[63,-1],[1,-1],[2,4],[56,63],[39,47]],"/home/hyttijan/MatrixCalculator/src/main/python/main.py":[[1,2],[-1,1],[2,6],[6,-1]]}}

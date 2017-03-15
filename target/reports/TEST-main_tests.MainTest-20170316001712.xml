@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="main_tests.MainTest-20170316001712" skipped="0" tests="1" time="0.000">
+	<testcase classname="main_tests.MainTest" name="test_should_issue_main" time="0.000"/>
+	<system-out>
+<![CDATA[wow
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

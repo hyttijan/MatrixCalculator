@@ -1,3 +1,6 @@
-Name      Stmts   Miss Branch BrPart  Cover
--------------------------------------------
-main.py       4      2      2      1    50%
+Name        Stmts   Miss Branch BrPart  Cover
+---------------------------------------------
+main.py         6      3      2      1    50%
+matrix.py      68     55     50      0    11%
+---------------------------------------------
+TOTAL          74     58     52      1    13%
