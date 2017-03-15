@@ -1,4 +1,4 @@
-###Viikko 1.###
+### Viikko 1.
 * luotu repositorio
 * luotu viikkoraportti
 * rekisteröidytty labtooliin
