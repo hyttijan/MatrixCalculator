@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" name="matrix_tests.MatrixTest-20170316005156" skipped="0" tests="1" time="0.001">
+	<testcase classname="matrix_tests.MatrixTest" name="testChangeRows" time="0.001">
+		<error message="name 'matrix' is not defined" type="NameError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/hyttijan/MatrixCalculator/src/unittest/python/matrix_tests.py", line 11, in testChangeRows
+    self.assertEqual(matrix.matrix[0],[2,1])
+NameError: name 'matrix' is not defined
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

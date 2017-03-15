@@ -2,9 +2,9 @@
   "module_names": [
     {
       "branches": 50,
-      "branches_missing": 50,
+      "branches_missing": 44,
       "branches_partial": 0,
-      "coverage": 19.11764705882353,
+      "coverage": 36.76470588235294,
       "lines": [
         1,
         2,
@@ -76,20 +76,8 @@
         69
       ],
       "lines_not_covered": [
-        3,
-        5,
-        6,
-        7,
-        9,
-        10,
         12,
         13,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
         22,
         23,
         24,
@@ -134,13 +122,13 @@
       ],
       "module": "matrix",
       "sum_lines": 68,
-      "sum_lines_not_covered": 55
+      "sum_lines_not_covered": 43
     },
     {
       "branches": 2,
       "branches_missing": 1,
       "branches_partial": 1,
-      "coverage": 50.0,
+      "coverage": 83.33333333333333,
       "lines": [
         1,
         2,
@@ -150,16 +138,14 @@
         7
       ],
       "lines_not_covered": [
-        3,
-        4,
         7
       ],
       "module": "main",
       "sum_lines": 6,
-      "sum_lines_not_covered": 3
+      "sum_lines_not_covered": 1
     }
   ],
-  "overall_branch_coverage": 1.9230769230769231,
+  "overall_branch_coverage": 13.461538461538462,
   "overall_branch_partial_coverage": 98.07692307692308,
-  "overall_coverage": 21.62162162162162
+  "overall_coverage": 40.54054054054054
 }

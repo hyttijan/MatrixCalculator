@@ -3,7 +3,8 @@ import unittest
 from main import main
 
 class MainTest(unittest.TestCase):
-    def test_should_issue_main(self):
-        print("wow")
+    def testMain(self):
+        main()
+        
 if __name__ == '__main__':
     unittest.main()

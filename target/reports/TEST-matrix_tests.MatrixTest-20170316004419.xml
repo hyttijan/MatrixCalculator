@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" name="matrix_tests.MatrixTest-20170316004419" skipped="0" tests="1" time="0.000">
+	<testcase classname="matrix_tests.MatrixTest" name="testChangeRows" time="0.000">
+		<error message="'Matrix' object has no attribute 'dispose'" type="AttributeError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/hyttijan/MatrixCalculator/src/unittest/python/matrix_tests.py", line 9, in tearDown
+    self.matrix.dispose()
+AttributeError: 'Matrix' object has no attribute 'dispose'
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
