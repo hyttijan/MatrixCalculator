@@ -1,6 +1,0 @@
-Collecting coverage
-  Downloading coverage-4.3.4-cp34-cp34m-manylinux1_x86_64.whl (191kB)
-Installing collected packages: coverage
-Successfully installed coverage-4.3.4
-d owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
-The directory '/home/hyttijan/.cache/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.

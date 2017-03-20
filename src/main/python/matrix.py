@@ -1,6 +1,7 @@
 class Matrix:
     def __init__(self,matrix):
         self.matrix = matrix
+    #method to change in matrix
     def changeRows(self,row1,row2):
         tempRow = self.matrix[row1][:]
         self.matrix[row1] = self.matrix[row2]
@@ -30,9 +31,9 @@ class Matrix:
             return Matrix(list)
         return None
     def scalarMultiplication(self,scalar):
-           for i in range(len(self.matrix)):
-               for j in range(len(self.matrix[i])):
-                   self.matrix[i][j] = scalar*self.matrix[i][j];
+        for i in range(len(self.matrix)):
+            for j in range(len(self.matrix[i])):
+                self.matrix[i][j] = scalar*self.matrix[i][j];
     def gaussJordanElimination(self):
         self.echelonForm();
         self.reducedEchelonForm();
