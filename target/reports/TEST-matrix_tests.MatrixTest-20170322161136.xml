@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="matrix_tests.MatrixTest-20170322161136" skipped="0" tests="4" time="0.001">
+	<testcase classname="matrix_tests.MatrixTest" name="testChangeRows" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testMultiplyRows" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testScalarMultiplication" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testPrintMatrix" time="0.000">
+		<failure message="[] != '[[1,2],\n[2,1]'" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/hyttijan/MatrixCalculator/src/unittest/python/matrix_tests.py", line 25, in testPrintMatrix
+    self.assertEqual(value,"[[1,2],\n[2,1]")
+AssertionError: [] != '[[1,2],\n[2,1]'
+
+Stdout:
+[ 1  2  ]
+[ 2  1  ]
+
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[[ 1  2  ]
+[ 2  1  ]
+
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

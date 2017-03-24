@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="matrix_tests.MatrixTest-20170323195606" skipped="0" tests="5" time="0.001">
+	<testcase classname="matrix_tests.MatrixTest" name="testChangeRows" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testMultiplyRows" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testPrintMatrix" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testScalarMultiplication" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testEchelonFormAndReducedEchelonForm" time="0.001">
+		<failure message="Lists differ: [0.0, 1.0, 0.0, -1.0] != [0, -3]
+
+First differing element 1:
+1.0
+-3
+
+First list contains 2 additional elements.
+First extra element 2:
+0.0
+
+- [0.0, 1.0, 0.0, -1.0]
++ [0, -3]" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/hyttijan/MatrixCalculator/src/unittest/python/matrix_tests.py", line 32, in testEchelonFormAndReducedEchelonForm
+    self.assertEqual(self.matrix.matrix[1],[0,-3])
+AssertionError: Lists differ: [0.0, 1.0, 0.0, -1.0] != [0, -3]
+
+First differing element 1:
+1.0
+-3
+
+First list contains 2 additional elements.
+First extra element 2:
+0.0
+
+- [0.0, 1.0, 0.0, -1.0]
++ [0, -3]
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[[ 2  -1  3  2  ]
+[ 1  0  2  1  ]
+[ -1  -2  0  3  ]
+
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

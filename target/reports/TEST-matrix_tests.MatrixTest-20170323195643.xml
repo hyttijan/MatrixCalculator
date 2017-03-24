@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="matrix_tests.MatrixTest-20170323195643" skipped="0" tests="5" time="0.001">
+	<testcase classname="matrix_tests.MatrixTest" name="testChangeRows" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testEchelonFormAndReducedEchelonForm" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testMultiplyRows" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testPrintMatrix" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testScalarMultiplication" time="0.000"/>
+	<system-out>
+<![CDATA[[ 2  -1  3  2  ]
+[ 1  0  2  1  ]
+[ -1  -2  0  3  ]
+
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

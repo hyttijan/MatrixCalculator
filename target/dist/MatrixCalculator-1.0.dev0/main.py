@@ -1,9 +1,7 @@
 from matrix import Matrix
 from sys import exit
 import re
-
 #parses string to matrix
-
 def parseMatrix(matrixStr):
     #parses numbers
     numbers = re.findall('(?<!=)[0-9]+',matrixStr)
@@ -27,6 +25,10 @@ def main():
     equalCommand = '='
     quitCommand = 'quit'
     #main-loop
+    
+    matrix = Matrix([[3,3,-15,9],[1,0,-2,1],[2,-1,-1,0]])
+    newMatrix = matrix.matrixMultiplication(Matrix([[3,-1],[2,-1],[2,-1],[2,-1]]))
+    newMatrix.printMatrix()
     while(True):
         matrix = Matrix([[3,2,1],[3,2,1],[2,2,2],[2,1,3]])
         matrix.gaussJordanElimination()

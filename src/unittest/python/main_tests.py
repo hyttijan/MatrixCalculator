@@ -1,10 +1,11 @@
 
 import unittest
-from main import main
-
+from main import main, parseMatrix
 class MainTest(unittest.TestCase):
-    def testMain(self):
+    def setUp(self):
         main()
-        
+    def testParseMatrix(self):
+        parseMatrix()
+
 if __name__ == '__main__':
     unittest.main()

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="matrix_tests.MatrixTest-20170323194546" skipped="0" tests="5" time="0.001">
+	<testcase classname="matrix_tests.MatrixTest" name="testChangeRows" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testMultiplyRows" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testPrintMatrix" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testScalarMultiplication" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testEchelonForm" time="0.001">
+		<failure message="Lists differ: [1.0, 0.0] != [2, 0]
+
+First differing element 0:
+1.0
+2
+
+- [1.0, 0.0]
++ [2, 0]" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/hyttijan/MatrixCalculator/src/unittest/python/matrix_tests.py", line 25, in testEchelonForm
+    self.assertEqual(self.matrix.matrix[0],[2,0])
+AssertionError: Lists differ: [1.0, 0.0] != [2, 0]
+
+First differing element 0:
+1.0
+2
+
+- [1.0, 0.0]
++ [2, 0]
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[[ 1  2  ]
+[ 2  1  ]
+
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
