@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" name="main_tests.MainTest-20170325133833" skipped="0" tests="1" time="0.000">
+	<testcase classname="main_tests.MainTest" name="testParseMatrix" time="0.000">
+		<error message="EOF when reading a line" type="EOFError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/hyttijan/MatrixCalculator/src/unittest/python/main_tests.py", line 6, in setUp
+    main()
+  File "/home/hyttijan/MatrixCalculator/src/main/python/main.py", line 34, in main
+    userInput = input("")
+EOFError: EOF when reading a line
+
+Stdout:
+[ 1.0  9.25185853854297e-17  5.921189464667501e-16  ]
+[ -0.0  1.0  -0.0  ]
+[ -0.0  1.0  -5.404319552844597e+16  ]
+[ 0.0  0.0  0.0  ]
+
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[[ 1.0  9.25185853854297e-17  5.921189464667501e-16  ]
+[ -0.0  1.0  -0.0  ]
+[ -0.0  1.0  -5.404319552844597e+16  ]
+[ 0.0  0.0  0.0  ]
+
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

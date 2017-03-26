@@ -1,12 +1,11 @@
 from matrix import Matrix
-from sys import exit
 import re
 
 #parses string to matrix
 
 def parseMatrix(matrixStr):
     #parses numbers
-    numbers = re.findall('(?<!=)[0-9]+',matrixStr)
+    numbers = re.findall('(?<!=)-*[0-9]+',matrixStr)
     #parses amount of columns
     cols = int(re.search('(?<=cols=)[1-9]+',matrixStr).group(0))
     #parses amount of rows
@@ -16,7 +15,7 @@ def parseMatrix(matrixStr):
     #puts numbers in the matrix
     for row in range(len(matrixList)):
         for col in range(cols):
-            matrixList[row][col] = numbers[row*cols+col]
+            matrixList[row][col] = int(numbers[row*cols+col])
     return Matrix(matrixList)
 def main():
     #dictionary for variables eg. matrixes,scalars
@@ -27,10 +26,11 @@ def main():
     equalCommand = '='
     quitCommand = 'quit'
     #main-loop
+    matrix = parseMatrix("3,3,-15,9,1,0,-2,1,2,-1,-1,0,cols=4,rows=3")
+    print(matrix.matrix[0])
+    print(matrix.matrix[1])
+    print(matrix.matrix[2])
     while(True):
-        matrix = Matrix([[3,2,1],[3,2,1],[2,2,2],[2,1,3]])
-        matrix.gaussJordanElimination()
-        matrix.printMatrix()
         userInput = input("")
         if(re.match(quitCommand,userInput)):
             break

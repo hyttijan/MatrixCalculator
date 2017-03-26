@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="main_tests.MainTest-20170325134449" skipped="0" tests="1" time="0.001">
+	<testcase classname="main_tests.MainTest" name="testParseMatrix" time="0.001">
+		<failure message="Lists differ: ['3', '3', '15', '9'] != [3, 3, -15, 9]
+
+First differing element 0:
+3
+3
+
+- ['3', '3', '15', '9']
++ [3, 3, -15, 9]" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/hyttijan/MatrixCalculator/src/unittest/python/main_tests.py", line 8, in testParseMatrix
+    self.assertEqual(matrix.matrix[0],[3,3,-15,9])
+AssertionError: Lists differ: ['3', '3', '15', '9'] != [3, 3, -15, 9]
+
+First differing element 0:
+3
+3
+
+- ['3', '3', '15', '9']
++ [3, 3, -15, 9]
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
