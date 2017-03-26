@@ -2,7 +2,6 @@ from matrix import Matrix
 import re
 
 #parses string to matrix
-
 def parseMatrix(matrixStr):
     #parses numbers
     numbers = re.findall('(?<!=)-*[0-9]+',matrixStr)
@@ -25,23 +24,7 @@ def main():
     matrixCommand ='\[(([0-9]+),)+cols=[1-9][0-9]*,rows=[1-9][0-9]*\]'
     equalCommand = '='
     quitCommand = 'quit'
-    #main-loop
-    matrix = parseMatrix("3,3,-15,9,1,0,-2,1,2,-1,-1,0,cols=4,rows=3")
-    print(matrix.matrix[0])
-    print(matrix.matrix[1])
-    print(matrix.matrix[2])
-    while(True):
-        userInput = input("")
-        if(re.match(quitCommand,userInput)):
-            break
-        elif(re.match(equalCommand,userInput)):
-            print("equal")
-        elif(re.match(matrixCommand,userInput)):
-            print("matrix")
-            matrix = parseMatrix(userInput)
-        elif(re.match(variableCommand,userInput)):
-            print("variable")
-        
+    #main-loop    
 if __name__ == "__main__":
     main()
     
