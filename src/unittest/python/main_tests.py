@@ -1,7 +1,7 @@
 
 import unittest
-from main import parseMatrix
 from matrix import Matrix
+from main import parseMatrix
 class MainTest(unittest.TestCase):
     
     def testParseMatrix(self):

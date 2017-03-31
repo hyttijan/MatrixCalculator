@@ -1,8 +1,0 @@
-# MatrixCalculator
-TIRA-projekti, matriisilaskin, toteutuskielenä käytetään Pythonia 
-
-## Ohjeet
-* Suorita projektikansion juuressa  pyb install_dependencies, tämä asentaa riippuvuudet
-* pyb ajaa testit ja laatii coverage-raportin
-* käynnistä projekti main.py:stä
-
