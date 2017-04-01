@@ -1,9 +1,9 @@
 import re
 from matrix import Matrix
-#parses string to matrix
 
+#parses string to matrix
 def parseMatrix(matrixStr):
-    #parses numbers
+    #parses list of numbers as strings
     numbers = re.findall('(?<!=)-*[0-9]+',matrixStr)
     #parses amount of columns
     cols = int(re.search('(?<=cols=)[1-9]+',matrixStr).group(0))
@@ -14,10 +14,11 @@ def parseMatrix(matrixStr):
     #puts numbers in the matrix
     for row in range(len(matrixList)):
         for col in range(cols):
-            matrixList[row][col] = int(numbers[row*cols+col])
+            matrixList[row][col] = float(numbers[row*cols+col])  #convert string to float before assigning
     return Matrix(matrixList)
+
+#program's main-method
 def main():
-    matrix = parseMatrix("3,3,-15,9,1,0,-2,1,2,-1,-1,0,cols=4,rows=3")
     #dictionary for variables eg. matrixes,scalars
     variables = {}
     #regexes for things
@@ -25,7 +26,7 @@ def main():
     matrixCommand ='\[(([0-9]+),)+cols=[1-9][0-9]*,rows=[1-9][0-9]*\]'
     equalCommand = '='
     quitCommand = 'quit'
-    #main-loop
+
 if __name__ == "__main__":
     main()
     

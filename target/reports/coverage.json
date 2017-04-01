@@ -1,10 +1,10 @@
 {
   "module_names": [
     {
-      "branches": 52,
+      "branches": 72,
       "branches_missing": 7,
       "branches_partial": 3,
-      "coverage": 91.04477611940298,
+      "coverage": 93.4065934065934,
       "lines": [
         1,
         4,
@@ -28,7 +28,7 @@
         31,
         34,
         37,
-        38,
+        39,
         40,
         41,
         43,
@@ -72,7 +72,31 @@
         104,
         105,
         106,
-        107
+        107,
+        109,
+        111,
+        112,
+        113,
+        115,
+        116,
+        117,
+        119,
+        120,
+        121,
+        122,
+        123,
+        125,
+        127,
+        129,
+        130,
+        132,
+        133,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141
       ],
       "lines_not_covered": [
         61,
@@ -83,14 +107,14 @@
         107
       ],
       "module": "matrix",
-      "sum_lines": 67,
+      "sum_lines": 91,
       "sum_lines_not_covered": 6
     },
     {
       "branches": 8,
       "branches_missing": 1,
       "branches_partial": 1,
-      "coverage": 65.0,
+      "coverage": 68.42105263157895,
       "lines": [
         1,
         2,
@@ -103,31 +127,29 @@
         16,
         17,
         18,
-        19,
-        20,
-        22,
-        24,
+        21,
+        23,
         25,
         26,
         27,
-        29,
-        30
+        28,
+        30,
+        31
       ],
       "lines_not_covered": [
-        20,
-        22,
-        24,
+        23,
         25,
         26,
         27,
-        30
+        28,
+        31
       ],
       "module": "main",
-      "sum_lines": 20,
-      "sum_lines_not_covered": 7
+      "sum_lines": 19,
+      "sum_lines_not_covered": 6
     }
   ],
-  "overall_branch_coverage": 86.66666666666667,
-  "overall_branch_partial_coverage": 93.33333333333333,
-  "overall_coverage": 85.05747126436782
+  "overall_branch_coverage": 90.0,
+  "overall_branch_partial_coverage": 95.0,
+  "overall_coverage": 89.0909090909091
 }

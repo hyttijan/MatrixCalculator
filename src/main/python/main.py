@@ -3,7 +3,7 @@ from matrix import Matrix
 
 #parses string to matrix
 def parseMatrix(matrixStr):
-    #parses numbers
+    #parses list of numbers as strings
     numbers = re.findall('(?<!=)-*[0-9]+',matrixStr)
     #parses amount of columns
     cols = int(re.search('(?<=cols=)[1-9]+',matrixStr).group(0))
@@ -14,7 +14,7 @@ def parseMatrix(matrixStr):
     #puts numbers in the matrix
     for row in range(len(matrixList)):
         for col in range(cols):
-            matrixList[row][col] = int(numbers[row*cols+col])
+            matrixList[row][col] = float(numbers[row*cols+col])  #convert string to float before assigning
     return Matrix(matrixList)
 
 #program's main-method
