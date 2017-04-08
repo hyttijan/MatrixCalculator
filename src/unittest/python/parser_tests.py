@@ -9,8 +9,6 @@ class ParserTest(unittest.TestCase):
     def tearUp(self):
         self.matrix.dispose()
     
-    def testParseMatches(self):
-        
     def testParseMatrix(self):
         matrix = self.parser.parseMatrix("3,3,-15,9,1,0,-2,1,2,-1,-1,0,cols=4,rows=3")
         self.assertEqual(matrix.matrix[0],[3,3,-15,9])
