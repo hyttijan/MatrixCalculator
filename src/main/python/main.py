@@ -1,32 +1,11 @@
-import re
-from matrix import Matrix
 
-#parses string to matrix
-def parseMatrix(matrixStr):
-    #parses list of numbers as strings
-    numbers = re.findall('(?<!=)-*[0-9]+',matrixStr)
-    #parses amount of columns
-    cols = int(re.search('(?<=cols=)[1-9]+',matrixStr).group(0))
-    #parses amount of rows
-    rows = int(re.search('(?<=rows=)[1-9]+',matrixStr).group(0))
-    #inits empty two-dimensional list for matrix
-    matrixList = [[0 for col in range(cols)] for row in range(rows)]
-    #puts numbers in the matrix
-    for row in range(len(matrixList)):
-        for col in range(cols):
-            matrixList[row][col] = float(numbers[row*cols+col])  #convert string to float before assigning
-    return Matrix(matrixList)
+from matrix import Matrix
+from parser import Parser
 
 #program's main-method
 def main():
-    #dictionary for variables eg. matrixes,scalars
-    variables = {}
-    #regexes for things
-    variableCommand = '[a-z]+'
-    matrixCommand ='\[(([0-9]+),)+cols=[1-9][0-9]*,rows=[1-9][0-9]*\]'
-    equalCommand = '='
-    quitCommand = 'quit'
-
+    parser = Parser()
+    
 if __name__ == "__main__":
     main()
     

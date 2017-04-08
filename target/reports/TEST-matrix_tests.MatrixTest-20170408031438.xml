@@ -1,0 +1,1944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="2" failures="1" name="matrix_tests.MatrixTest-20170408031438" skipped="0" tests="8" time="0.019">
+	<testcase classname="matrix_tests.MatrixTest" name="testChangeRows" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testEchelonFormAndReducedEchelonForm" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testMultiplyRows" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testPrintMatrix" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testScalarMultiplication" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testTranspose" time="0.000">
+		<failure message="Lists differ: [3, 1, 2] != [3, 1, -2]
+
+First differing element 2:
+2
+-2
+
+- [3, 1, 2]
++ [3, 1, -2]
+?        +
+" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/hyttijan/MatrixCalculator/src/unittest/python/matrix_tests.py", line 57, in testTranspose
+    self.assertEqual(transposedMatrix.matrix[0],[3,1,-2])
+AssertionError: Lists differ: [3, 1, 2] != [3, 1, -2]
+
+First differing element 2:
+2
+-2
+
+- [3, 1, 2]
++ [3, 1, -2]
+?        +
+
+]]>		</failure>
+	</testcase>
+	<testcase classname="matrix_tests.MatrixTest" name="testCountDeterminant" time="0.018">
+		<error message="maximum recursion depth exceeded" type="RuntimeError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/hyttijan/MatrixCalculator/src/unittest/python/matrix_tests.py", line 53, in testCountDeterminant
+    self.assertEqual(self.matrix2.countDeterminant(),4)
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 186, in countDeterminant
+    * newMatrix.countDeterminant())
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 182, in countDeterminant
+    newMatrix = self.generateList(col)
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 202, in generateList
+    return Matrix(newList)
+RuntimeError: maximum recursion depth exceeded
+]]>		</error>
+	</testcase>
+	<testcase classname="matrix_tests.MatrixTest" name="testMatrixMultiplication" time="0.000">
+		<error message="list index out of range" type="IndexError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/hyttijan/MatrixCalculator/src/unittest/python/matrix_tests.py", line 35, in testMatrixMultiplication
+    newMatrix = self.matrix.matrixMultiplication(Matrix([[3,-1],[2,-1],[2,-1],[2,-1]]))
+  File "/home/hyttijan/MatrixCalculator/src/main/python/matrix.py", line 53, in matrixMultiplication
+    * secondMatrix.matrix[k][column])
+IndexError: list index out of range
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[[ 3  3  -15  9  ]
+[ 1  0  -2  1  ]
+[ 2  -1  -1  0  ]
+
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

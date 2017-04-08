@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" failures="0" name="matrix_tests.MatrixTest-20170408175835" skipped="0" tests="11" time="0.001">
+	<testcase classname="matrix_tests.MatrixTest" name="testAttachMatrices" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testChangeRows" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testCountDeterminant" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testEchelonFormAndReducedEchelonForm" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testInvertMatrix" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testMatrixMultiplication" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testMultiplyRows" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testPrintMatrix" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testScalarMultiplication" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testTranspose" time="0.000"/>
+	<testcase classname="matrix_tests.MatrixTest" name="testFormOneMatrix" time="0.000">
+		<error message="'Matrix' object does not support indexing" type="TypeError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/hyttijan/MatrixCalculator/src/unittest/python/matrix_tests.py", line 81, in testFormOneMatrix
+    self.assertEqual(self.matrix[0],[1,0,0])
+TypeError: 'Matrix' object does not support indexing
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[[ 3  3  -15  9  ]
+[ 1  0  -2  1  ]
+[ 2  -1  -1  0  ]
+
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

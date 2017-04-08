@@ -31,7 +31,8 @@ if __name__ == '__main__':
         packages = [],
         py_modules = [
             'matrix',
-            'main'
+            'main',
+            'parser'
         ],
         classifiers = [
             'Development Status :: 3 - Alpha',
