@@ -5,7 +5,7 @@ class Parser:
     
     def __init__(self):
         self.variables = {}
-        self.variableCommand = re.compile('(^([cols]|[rows]))[a-z]+')
+        self.variableCommand = re.compile('(?<!\,)[a-z]+')
         self.matrixCommand = re.compile('\[(([0-9]+),)+cols=[1-9][0-9]*,rows=[1-9][0-9]*\]')
         self.equalCommand = re.compile('=')
         self.addCommand = re.compile('\+')
@@ -13,16 +13,17 @@ class Parser:
         self.multiplyCommand = re.compile('\*')
         self.quitCommand = re.compile('quit')
         
-    # Parses expression 
+    """ Parses expression """ 
     def parseExpression(self,expression):
-        matrixMatches = self.parseMatches(expression,self.matrixCommand)
+        matches = self.parseMatches(expression,self.variableCommand)
+        print(matches)
         
-    # Parses matches of given command
+    """ Parses matches of given command  and returns list of matches. """
     def parseMatches(self,expression,command):
         matchIterator = command.finditer(expression)
         return list(matchIterator)
     
-    # Parses string to matrix
+    """ Parses string to matrix. """
     def parseMatrix(self,matrixStr):
         #parses list of numbers as strings
         numbers = re.findall('(?<!=)-*[0-9]+',matrixStr)
