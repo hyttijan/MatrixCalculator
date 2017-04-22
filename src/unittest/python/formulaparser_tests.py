@@ -1,10 +1,10 @@
 import unittest
-from parser import Parser
+from formulaparser import FormulaParser
 
 class ParserTest(unittest.TestCase):
     
     def setUp(self):
-        self.parser = Parser()
+        self.parser = FormulaParser()
     
     def tearUp(self):
         self.matrix.dispose()
