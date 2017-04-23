@@ -1,2 +1,3 @@
-/scripts
-/_pycache_
+.metadata
+scripts
+_pycache_
