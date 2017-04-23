@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="formulaparser_tests.ParserTest-20170423033154" skipped="0" tests="2" time="0.005">
+	<testcase classname="formulaparser_tests.ParserTest" name="testParseExpression" time="0.005"/>
+	<testcase classname="formulaparser_tests.ParserTest" name="testParseMatrix" time="0.000"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
