@@ -8,14 +8,7 @@ class MatrixTest(unittest.TestCase):
         self.matrix = Matrix([[3,3,-15,9],[1,0,-2,1],[2,-1,-1,0]])
         self.matrix2 =  Matrix([[1,2,3,4],[5,6,7,0],[0,0,-1,0],[8,9,-4,-2]])
         self.matrix3 = Matrix([[-2,3,2],[0,1,-1],[1,2,4]])
-        numbers = [3,9,16]
-        self.matrices = [Matrix for i in range(len(numbers))]
-        for i in range(len(numbers)):
-            matrixList = [0 for k in range(numbers[i])]
-            for j in range(numbers[i]):
-                matrixList[j] = [0 for z in range(j)]
-                matrixList[j].extend([1 for z in range(j,numbers[i])])
-                self.matrices[i] = Matrix(matrixList)
+        
         
     def tearUp(self):
         self.matrix.dispose()
@@ -90,4 +83,3 @@ class MatrixTest(unittest.TestCase):
         self.assertEqual(identityMatrix.matrix[1],[0,1,0])
         self.assertEqual(identityMatrix.matrix[2],[0,0,1])
     
-    def testTimeForDeterminant(self):

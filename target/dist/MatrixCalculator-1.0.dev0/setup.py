@@ -32,7 +32,7 @@ if __name__ == '__main__':
         py_modules = [
             'matrix',
             'main',
-            'parser'
+            'formulaparser'
         ],
         classifiers = [
             'Development Status :: 3 - Alpha',

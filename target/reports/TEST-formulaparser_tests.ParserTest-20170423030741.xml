@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="formulaparser_tests.ParserTest-20170423030741" skipped="0" tests="2" time="0.005">
+	<testcase classname="formulaparser_tests.ParserTest" name="testParseMatrix" time="0.000"/>
+	<testcase classname="formulaparser_tests.ParserTest" name="testParseExpression" time="0.005">
+		<failure message="[-17.0] != -17" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/hyttijan/MatrixCalculator/src/unittest/python/formulaparser_tests.py", line 12, in testParseExpression
+    self.assertEqual(self.parser.parseExpression("det([-2,3,2,0,1,-1,1,2,4,cols=3,rows=3])"),-17)
+AssertionError: [-17.0] != -17
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

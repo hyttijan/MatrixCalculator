@@ -3,25 +3,25 @@ class Matrix:
     def __init__(self, matrix):
         self.matrix = matrix
      
-    # Inits empty two-dimensional list
+    """ Inits empty two-dimensional list """
     def initEmptyMatrixList(self,rows,columns):
         matrixList = [0 for row in range(rows)]
         for row in range(rows):
             matrixList[row] = [0 for column in range(columns)]
         return matrixList;
   
-    # Swaps two rows in matrix
+    """ Swaps two rows in matrix """
     def changeRows(self, row1, row2):
         tempRow = self.matrix[row1][:]
         self.matrix[row1] = self.matrix[row2]
         self.matrix[row2] = tempRow
         
-    # Multiplies one row in matrix with multiplier
+    """ Multiplies one row in matrix with multiplier """
     def multiplyRow(self, multiplier, row):
         for column in range(len(self.matrix[row])):
             self.matrix[row][column] = self.matrix[row][column]*multiplier
             
-    # Adds one row to another with multiplier
+    """ Adds one row to another with multiplier """
     def addRowToAnother(self, row1, row2, multiplier):
         for column in range(len(self.matrix[row1])):
             self.matrix[row2][column]=(self.matrix[row2][column]
@@ -36,7 +36,7 @@ class Matrix:
             print("]")
         print("")
         
-    # Multiplies matrix with another matrix
+    """ Multiplies matrix with another matrix """
     def matrixMultiplication(self, secondMatrix):
         # Check that matrixes can be multiplied
         # First matrixes column count must equal second matrixe's row count
@@ -54,19 +54,19 @@ class Matrix:
         # If matrixes cannot be multiplied return None
         return None
     
-    # Multiplies matrix with scalar
+    """ Multiplies matrix with scalar """
     def scalarMultiplication(self, scalar):
         for row in range(len(self.matrix)):
             for column in range(len(self.matrix[row])):
                 # Multiplies each row and column with scalar
                 self.matrix[row][column] = scalar*self.matrix[row][column]
     
-    # Performs Gauss-Jordan elimination for the matrix
+    """ Performs Gauss-Jordan elimination for the matrix """
     def gaussJordanElimination(self):
         self.echelonForm()
         self.reducedEchelonForm()
         
-    # Forms echelon form from the matrix
+    """ Forms echelon form from the matrix """
     def echelonForm(self):
         column = 0
         for row in range(len(self.matrix)):
@@ -79,7 +79,7 @@ class Matrix:
                 if (column < len(self.matrix[0])-1):
                     column = column+1
                     
-    # Forms reduced echelon form from echelon form matrix
+    """ Forms reduced echelon form from echelon form matrix """
     def reducedEchelonForm(self):
         for row in range(len(self.matrix)):
             for column in range(len(self.matrix[row])-1):
@@ -91,7 +91,9 @@ class Matrix:
                     self.multiplyRow(multiplier,row)
                     break
                 
-    # Decrements all the elements in rows in this column to zero except the one where row's index equals column's index
+    """Decrements all the elements in rows in this column to zero
+     except the one where row's index equals column's index 
+     """
     def decrementToZero(self, column):   
         for row in range(len(self.matrix)):
             if (row != column):
@@ -100,7 +102,7 @@ class Matrix:
                     multiplier = -multiplier
                 self.addRowToAnother(column, row, multiplier)
                 
-    # Pushes all the rows with zeros in the current column down
+    """ Pushes all the rows with zeros in the current column down """
     def pushZeroRowsDown(self, row, column):
         # Start pushing down rows from current row
         for row2 in range(row,len(self.matrix)-1):
@@ -111,7 +113,7 @@ class Matrix:
                         self.changeRows(row3, row2)
                         break
     
-    # Forms transpose of matrix
+    """ Forms transpose of matrix """
     def transpose(self):
         matrixList = self.initEmptyMatrixList(len(self.matrix[0]),len(self.matrix))
         for row in range(len(matrixList)):
@@ -119,7 +121,7 @@ class Matrix:
                 matrixList[row][column] = self.matrix[column][row]
         return Matrix(matrixList)
     
-    # Forms inverse matrix
+    """ Forms inverse matrix """
     def invertMatrix(self):
         # Check that matrix is square matrix
         if (len(self.matrix) == len(self.matrix[0])):
@@ -132,7 +134,7 @@ class Matrix:
             else:
                 return None
             
-    # Forms Identity matrix      
+    """ Forms Identity matrix """      
     def formIdentityMatrix(self):
         # Check that matrix is square matrix
         if(len(self.matrix)==len(self.matrix[0])):
@@ -146,28 +148,28 @@ class Matrix:
         else:
             return None
     
-    # Checks if matrix is identity matrix
+    """ Checks if matrix is identity matrix """
     def isIdentityMatrix(self):
         for row in range(len(self.matrix)):
             if(self.matrix[row][row] != 1):
                 return False
         return True
     
-    # Separates help matrix from matrix
+    """ Separates help matrix from matrix """
     def separateMatrices(self):
         matrixList = self.initEmptyMatrixList(len(self.matrix),1)
         for row in range(len(self.matrix)):
             matrixList[row] = self.matrix[row][int(len(self.matrix[0])/2):]
         return Matrix(matrixList)
     
-    # Attaches help matrix to matrix
+    """ Attaches help matrix to matrix """
     def attachMatrices(self,anotherMatrix):
         matrixList = self.initEmptyMatrixList(len(self.matrix),1)
         for row in range(len(self.matrix)):
             matrixList[row] = self.matrix[row]+anotherMatrix.matrix[row]
         return Matrix(matrixList)
     
-    # Counts the determinant of the matrix
+    """ Counts the determinant of the matrix """
     def countDeterminant(self):
         # Check that matrix is square matrix
         if (len(self.matrix) == len(self.matrix[0])):
