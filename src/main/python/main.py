@@ -5,7 +5,9 @@ import time
 #program's main-method
 def main():
     parser = FormulaParser()
-    print(parser.parseExpression("det([-2,3,2,0,1,-1,1,2,4,cols=3,rows=3])"))
+    matrix = Matrix([[1,0,0],[1,0,0],[1,0,0]])
+    matrix2 = Matrix([[1,1,1],[0,0,0],[0,0,0]])
+    matrix.matrixMultiplication(matrix2).printMatrix()
 if __name__ == "__main__":
     main()
     

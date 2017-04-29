@@ -35,7 +35,21 @@ class Matrix:
                 print(self.matrix[row][column], " ", end="")
             print("]")
         print("")
-        
+    
+    def addMatrix(self,secondMatrix):
+        if(len(self.matrix)==len(secondMatrix) and len(self.matrix[0])==len(secondMatrix.matrix[0])):
+            newMatrix = Matrix(self.matrix)
+            for row in range(len(newMatrix.matrixt)):
+                newMatrix.addRowToAnother(newMatrix.matrix[row],secondMatrix.matrix[row],1)
+            return newMatrix
+        return None
+    def decrementMatrix(self,secondMatrix):
+        if(len(self.matrix)==len(secondMatrix) and len(self.matrix[0])==len(secondMatrix.matrix[0])):
+            newMatrix = Matrix(self.matrix)
+            for row in range(len(newMatrix.matrixt)):
+                newMatrix.addRowToAnother(newMatrix.matrix[row],secondMatrix.matrix[row],-1)
+            return newMatrix
+        return None         
     """ Multiplies matrix with another matrix """
     def matrixMultiplication(self, secondMatrix):
         # Check that matrixes can be multiplied
