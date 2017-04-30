@@ -8,26 +8,32 @@
 ##### Matriisin yhteen- ja vähennyslasku
 * Testauksessa oli käytetty kahta identtistä matriisia
 * Aikavaativuus algoritmilla on O(n)
+
 ![Matriisin yhteenlaskun kuva](yhteenlasku.jpeg)
 
 ##### Matriisin kertominen
 * Testauksessa oli käytetty kahta identtistä matriisia
 * Aikavaativuus algoritmilla on O(nmp), missä matriisit ovat nxm ja mxp
+
 ![Matriisin kertolaskun kuva](kertolasku.jpeg)
 
 ##### Matriisin determinantti
 * Aikavaativuus algoritmille(n!)
+
 ![Determinantti kuva](determinantti.jpeg)
 
 ##### Matriisin transponointi
 * Aikavaativuus algoritmille O(n)
+
 ![Transponointi kuva](transponointi.jpeg)
 
 ##### Gauss-Jordan eliminointi
 * Aikavaativuus algoritmille O(n^3)
+
 ![Gauss-Jordan eliminointi kuva](gaussjordan.jpeg)
 
 ##### Matriisin inversio
 * Inversiossa hyödynnettään Gauss-Jordanin eliminointia
 * Aikavaativuus algoritmille O(n^3)
+
 ![Inversio kuva](inversio.jpeg)
