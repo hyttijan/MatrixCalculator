@@ -1,0 +1,5 @@
+### Viikko 6.
+* Aloitettu toteutusdokumentaation teko
+* Muokattu testausdokumentaatiota (lisätty aikavaativuuksia,ajettu uusia testejä ja laitettu havainnollistavammat kuvat)
+* Lisätty Matrix-luokkaan yhteen- ja vähennyslasku operaatiot
+* aikaa kulutettu 5h

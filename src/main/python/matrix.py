@@ -37,19 +37,21 @@ class Matrix:
         print("")
     
     def addMatrix(self,secondMatrix):
-        if(len(self.matrix)==len(secondMatrix) and len(self.matrix[0])==len(secondMatrix.matrix[0])):
+        if(len(self.matrix)==len(secondMatrix.matrix) and len(self.matrix[0])==len(secondMatrix.matrix[0])):
             newMatrix = Matrix(self.matrix)
-            for row in range(len(newMatrix.matrixt)):
-                newMatrix.addRowToAnother(newMatrix.matrix[row],secondMatrix.matrix[row],1)
+            for row in range(len(newMatrix.matrix)):
+                for column in range(len(newMatrix.matrix[0])):
+                    newMatrix.matrix[row][column] = self.matrix[row][column]+secondMatrix.matrix[row][column]
             return newMatrix
         return None
     def decrementMatrix(self,secondMatrix):
-        if(len(self.matrix)==len(secondMatrix) and len(self.matrix[0])==len(secondMatrix.matrix[0])):
+        if(len(self.matrix)==len(secondMatrix.matrix) and len(self.matrix[0])==len(secondMatrix.matrix[0])):
             newMatrix = Matrix(self.matrix)
-            for row in range(len(newMatrix.matrixt)):
-                newMatrix.addRowToAnother(newMatrix.matrix[row],secondMatrix.matrix[row],-1)
+            for row in range(len(newMatrix.matrix)):
+                for column in range(len(newMatrix.matrix[0])):
+                    newMatrix.matrix[row][column] = self.matrix[row][column]-secondMatrix.matrix[row][column]
             return newMatrix
-        return None         
+        return None       
     """ Multiplies matrix with another matrix """
     def matrixMultiplication(self, secondMatrix):
         # Check that matrixes can be multiplied

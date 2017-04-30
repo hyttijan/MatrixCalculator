@@ -83,3 +83,8 @@ class MatrixTest(unittest.TestCase):
         self.assertEqual(identityMatrix.matrix[1],[0,1,0])
         self.assertEqual(identityMatrix.matrix[2],[0,0,1])
     
+    def testDecrementMatrix(self):
+        newMatrix = self.matrix.decrementMatrix(self.matrix)
+        self.assertEqual(newMatrix.matrix[0],[0,0,0,0])
+        self.assertEqual(newMatrix.matrix[1],[0,0,0,0])
+        self.assertEqual(newMatrix.matrix[2],[0,0,0,0])
