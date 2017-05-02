@@ -44,7 +44,7 @@ class Matrix:
                     newMatrix.matrix[row][column] = self.matrix[row][column]+secondMatrix.matrix[row][column]
             return newMatrix
         return None
-    def decrementMatrix(self,secondMatrix):
+    def substractMatrix(self,secondMatrix):
         if(len(self.matrix)==len(secondMatrix.matrix) and len(self.matrix[0])==len(secondMatrix.matrix[0])):
             newMatrix = Matrix(self.matrix)
             for row in range(len(newMatrix.matrix)):

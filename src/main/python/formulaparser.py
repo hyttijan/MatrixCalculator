@@ -12,7 +12,7 @@ class FormulaParser:
         self.matrixPattern = re.compile("matrix([1-9][0-9]+|[0-9])")
         self.matrixPattern2 = re.compile("(det|inv|trans)\(matrix([1-9][0-9]+|[0-9])\)")
         self.matrixCommand = re.compile('\[(-*([0-9]|[1-9][0-9]+),)+((cols=[1-9][0-9]*,rows=[1-9][0-9]*)|(rows=[1-9][0-9]*,cols=[1-9][0-9]*))\]')
-        self.multiplyPattern = re.compile('(matrix([1-9][0-9]+|[0-9])*matrix([1-9][0-9]+|[0-9]))|(matrix([1-9][0-9]+|[0-9])*(-*([1-9][0-9]|[0-9])))')
+        self.multiplyPattern = re.compile('matrix([1-9][0-9]+|[0-9])\*matrix([1-9][0-9]+|[0-9])')
         self.addCommand = re.compile('\+')
         self.substractCommand = re.compile('\-')
         self.multiplyCommand = re.compile('\*')
@@ -42,20 +42,47 @@ class FormulaParser:
     """ Parses determinant,inversion and transpose functions """
     def parseMatrices2(self,matrices):
         result = self.parseMatches(self.expression,self.matrixPattern2);
-        while(len(result)!= 0):
-            for i in range(len(result)):
-                """ Parses the matrix's index """
-                index = self.numberPattern.search(result[i].group(0)).group(0)
-                if(self.detPattern.search(result[i].group(0))!=None):
-                    matrices[int(index)] = matrices[int(index)].countDeterminant()
-                elif(self.invPattern.search(result[i].group(0))!=None):
-                    matrices[int(index)] = matrices[int(index)].invertMatrix()
-                else:
-                    matrices[int(index)] = matrices[int(index)].transpose()
-                self.expression = self.expression.replace(result[i].group(0),"matrix"+index)
+        result2 = self.parseMatches(self.expression,self.multiplyPattern);
+        while(len(result)!= 0 or len(result2)!=0):
             result = list(self.matrixPattern2.finditer(self.expression))
+            result2 = self.parseMatches(self.expression,self.multiplyPattern);
+            matrices = self.parseInvDetTrans(matrices, result)
+            matrices = self.parseMultiply(matrices, result2)
+        
+            
+            
         return matrices
-    
+    def parseMultiply(self,matrices,result):
+        for i in range(len(result)):
+            """ Parses the matrix's index """
+            indexes = self.numberPattern.findall(result[i].group(0))
+            matrices[int(indexes[0])] = matrices[int(indexes[0])].matrixMultiplication(matrices[int(indexes[1])])
+            matrices[int(indexes[1])] = None
+            self.expression = self.expression.replace(result[i].group(0),"matrix"+indexes[0])
+        return matrices
+    def parseAddSubstract(self,matrices,result):
+        for i in range(len(result)):
+            """ Parses the matrix's index """
+            indexes = self.numberPattern.findall(result[i].group(0))
+            if(self.addCommand.search(result.group(0)!=None)):
+                matrices[int(indexes[0])] = matrices[int(indexes[0])].addMatrix((matrices[int(indexes[1])]))
+            else:
+                matrices[int(indexes[0])] = matrices[int(indexes[0])].substractMatrix((matrices[int(indexes[1])]))
+            matrices[int(indexes[1])] = None
+            self.expression = self.expression.replace(result[i].group(0),"matrix"+indexes[0])
+            
+    def parseInvDetTrans(self,matrices,result):
+        for i in range(len(result)):
+            """ Parses the matrix's index """
+            index = self.numberPattern.search(result[i].group(0)).group(0)
+            if(self.detPattern.search(result[i].group(0))!=None):
+                matrices[int(index)] = matrices[int(index)].countDeterminant()
+            elif(self.invPattern.search(result[i].group(0))!=None):
+                matrices[int(index)] = matrices[int(index)].invertMatrix()
+            else:
+                matrices[int(index)] = matrices[int(index)].transpose()
+            self.expression = self.expression.replace(result[i].group(0),"matrix"+index)
+        return matrices
     """ Parses string to matrix. """
     def parseMatrix(self,matrixStr):
         
@@ -68,7 +95,6 @@ class FormulaParser:
         #inits empty two-dimensional list for matrix
         matrixList = [[0 for col in range(cols)] for row in range(rows)]
         if(len(numbers) != cols*rows):
-            print("Amount of numbers in matrix does not equal rows x cols")
             return None;
         #puts numbers in the matrix
         for row in range(len(matrixList)):
