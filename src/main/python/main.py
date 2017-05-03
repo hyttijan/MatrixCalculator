@@ -1,19 +1,19 @@
 
 from matrix import Matrix
 from formulaparser import FormulaParser
-import time
 #program's main-method
 def main():
     parser = FormulaParser()
     expression = input(">")
     while(expression!="quit"):
-        answer = parser.parseExpression(expression)
-        if(len(answer)==0):
+        try:
+            answer = parser.parseExpression(expression)
+            if(isinstance(answer[0],Matrix)):
+                answer[0].printMatrix()
+            else:
+                print(answer[0])
+        except Exception:
             print("bad expression")
-        elif(isinstance(answer[0],Matrix)):
-            answer[0].printMatrix()
-        else:
-            print(answer[0])
         expression = input(">")
     
         

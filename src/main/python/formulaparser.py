@@ -48,9 +48,6 @@ class FormulaParser:
             result2 = self.parseMatches(self.expression,self.multiplyPattern);
             matrices = self.parseInvDetTrans(matrices, result)
             matrices = self.parseMultiply(matrices, result2)
-        
-            
-            
         return matrices
     def parseMultiply(self,matrices,result):
         for i in range(len(result)):
